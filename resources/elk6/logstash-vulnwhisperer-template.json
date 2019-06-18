@@ -1,7 +1,14 @@
 {
-  "index_patterns": "logstash-vulnwhisperer-*",
+  "index_patterns": ["logstash-vulnwhisperer-*"],
+  "order":  0,
+  "version": 1,
+  "settings": {
+    "index": {
+      "number_of_shards": "1",
+      "number_of_replicas": "1"
+    }
+  },
   "mappings": {
-    "doc": {
       "properties": {
         "@timestamp": {
           "type": "date"
@@ -230,4 +237,3 @@
       }
     }
   }
-}
