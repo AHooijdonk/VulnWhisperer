@@ -73,7 +73,7 @@
       "description": "",
       "hits": 0,
       "columns": [
-        "host",
+        "asset",
         "risk",
         "risk_score",
         "cve",
